@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <div className=' bg-[#006039] w-full h-[70px] text-white font-semibold '>
+    <div className='fixed top-0 bg-[#006039] w-full h-[70px] text-white font-semibold '>
 
 
         <div className=' mx-auto max-w-7xl p-5 text-center relative h-full '>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 {
                     path == '/' && 
                     (
-                        <button>
+                        <button className='hover:text-green-500 duration-300'>
                             Menu
                         </button>
                     )
@@ -33,7 +33,7 @@ const Navbar = () => {
                 {
                     path != '/' && 
                     (
-                        <Link href='/'>
+                        <Link href='/' className='hover:text-green-500 duration-300'>
                             Home
                         </Link>
                     )
@@ -43,12 +43,12 @@ const Navbar = () => {
 
 
             {/* center image */}
-            <div className='text-center inline-block'>
+            <div className='inline-block -mt-[10px]'>
                 <Image
                 src="/gp2.png" // Path to your image
                 alt="Growth Partners Icon"
-                width={30} // Desired width
-                height={30} // Desired height
+                width={40} // Desired width
+                height={40} // Desired height
                 />
             </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
             {
                 path != '/contact' && 
                 (
-                    <Link href={'/contact'}>
+                    <Link href='/contact' className='hover:text-green-500 duration-300'>
                         Contact Us
                     </Link>
                 )
