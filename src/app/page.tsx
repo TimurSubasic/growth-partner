@@ -1,5 +1,6 @@
 
 import Image from 'next/image'
+import Link from 'next/link';
 export default function Home() {
   
   return (
@@ -23,13 +24,13 @@ export default function Home() {
 
 
       {/* about us */}
-      <section className="text-[#006039] py-16 max-w-7xl mx-auto ">
+      <section className="text-[#006039] py-16 px-5 max-w-7xl mx-auto ">
 
         <h1 className="text-center font-myfont uppercase text-4xl mt-12 lg:text-5xl duration-150 ">
           about us
         </h1>
 
-        <p className=" font-bold text-center p-5 my-8 uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl duration-150 ">
+        <p className=" font-bold text-center my-8 uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl duration-150 ">
           While others are stuck in the talk, we focus on delivering real results, we are a dedicated team of marketers, sales experts, editors and graphic designers specializing in building high-converting funnels and driving conversions across your digital platforms. From concept to execution, we craft tailored strategies that don&apos;t just attract attention but transform visitors into loyal customers. If you&apos;re ready to stop settling for average and start maximazing your digital impact, we&apos;re here to take your business to the next level
         </p>
 
@@ -131,6 +132,47 @@ export default function Home() {
 
 
           </div>
+
+        </div>
+
+      </section>
+
+
+      {/* contact us */}
+      <section className=' py-16 px-5 max-w-7xl mx-auto  ' >
+
+        <div className='flex items-center justify-center flex-col'>
+
+          {/* Header */}
+          <div className='felx flex-col gap-5 items-center justify-center '>
+            <Image
+            src='/GP-icon2.png'
+            alt='GrowthPartners icon'
+            height={250}
+            width={250}
+            />
+
+            <h2 className=' font-myfont text-3xl text-[#006039] uppercase '>
+              Contact us
+            </h2>
+
+          </div>
+
+
+          {/* text +btn */}
+          <div className=' flex justify-center items-center my-10 flex-col gap-6 md:flex-row '>
+
+            <p className=' text-green-500 uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl duration-150 text-center md:text-start md:w-2/3 '>
+              Our services are mainly in building you an eco-system that we can manage and improve constantly, the best part is that we do not charge for that, we just take a % of sales depending on our engagemant for building you a system that we do not manage we charge <span className='text-yellow-500'>1000-2000</span> depending on the size of the project
+            </p>
+
+            <Link href='/contact' className='uppercase font-bold px-5 py-3 rounded-lg bg-[#006039] text-white hover:scale-110 hover:bg-transparent hover:text-[#006039] border-4 border-[#006039] duration-300 '>
+              Contact Us 
+            </Link>
+
+          </div>
+
+
 
         </div>
 
