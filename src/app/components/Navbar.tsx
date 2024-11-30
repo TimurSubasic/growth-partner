@@ -24,9 +24,25 @@ const Navbar = () => {
                 {
                     path == '/' && 
                     (
-                        <button className='hover:text-green-500 duration-300'>
-                            Menu
+                        <button className="hover:text-green-500 duration-300 flex items-center justify-center gap-1">
+                            <svg
+                                className="stroke-current w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                d="M4 6H20M4 12H20M4 18H20"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                />
+                            </svg>
+                            <p>
+                                Menu
+                            </p>
                         </button>
+
                     )
                 }
 
