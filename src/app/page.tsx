@@ -4,11 +4,11 @@ import Link from 'next/link';
 export default function Home() {
   
   return (
-    <div className="w-full bg-slate-200">
+    <div className="w-full">
       
 
       {/* hero */}
-      <section id="hero" className="h-screen w-full ">
+      <section id="hero" className="h-screen-nav w-full ">
 
         <div className="w-full h-full flex items-center justify-center bg-black/25">
 

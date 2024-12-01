@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         myfont: ['MyFont', 'sans-serif'],
       },
+      height: {
+        'screen-nav': 'calc(100vh - 70px)'
+      },
     },
   },
   plugins: [],
