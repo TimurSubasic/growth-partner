@@ -150,7 +150,7 @@ export default function Home() {
             alt='GrowthPartners icon'
             height={250}
             width={250}
-            className='mx-auto'
+            className=' mx-auto '
             />
 
             <h2 className=' font-myfont text-3xl text-[#006039] uppercase '>
