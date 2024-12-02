@@ -167,7 +167,7 @@ export default function Home() {
               Our services are mainly in building you an eco-system that we can manage and improve constantly, the best part is that we do not charge for that, we just take a % of sales depending on our engagemant for building you a system that we do not manage we charge <span className='text-yellow-500'>1000-2000</span> depending on the size of the project
             </p>
 
-            <Link href='/contact' className='uppercase font-bold px-5 py-3 rounded-lg bg-[#006039] text-white hover:scale-110 hover:bg-transparent hover:text-[#006039] border-4 border-[#006039] duration-300 '>
+            <Link href='/contact' className='uppercase font-bold px-5 py-3 rounded-lg bg-[#006039] text-white hover:opacity-85 hover:bg-yellow-500 hover:text-black hover:border-black border-4 border-[#006039] duration-300 text-lg  '>
               Contact Us 
             </Link>
 
