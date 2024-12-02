@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   
   return (
-    <div className="w-full">
+    <div className="w-full" id='home-page'>
       
 
       {/* hero */}
@@ -24,7 +24,7 @@ export default function Home() {
 
 
       {/* about us */}
-      <section className="text-[#006039] py-16 px-5 max-w-7xl mx-auto ">
+      <section id='about-us' className="text-[#006039] py-16 px-5 max-w-7xl mx-auto ">
 
         <h1 className="text-center font-myfont uppercase text-4xl mt-12 lg:text-5xl duration-150 ">
           about us
@@ -38,7 +38,7 @@ export default function Home() {
 
 
       {/* why us */}
-      <section className="bg-[#006039] w-full min-h-screen text-white p-12 ">
+      <section id='why-us' className="bg-[#006039] w-full min-h-screen text-white p-12 ">
 
         <div className=" max-w-4xl mx-auto flex flex-col items-center justify-center gap-8">
 
@@ -139,7 +139,7 @@ export default function Home() {
 
 
       {/* contact us */}
-      <section className=' py-16 px-5 max-w-7xl mx-auto  ' >
+      <section id='contact-us' className=' py-16 px-5 max-w-7xl mx-auto  ' >
 
         <div className='flex items-center justify-center flex-col'>
 
