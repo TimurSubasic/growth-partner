@@ -29,11 +29,11 @@ const Navbar = () => {
 
   return (
     <div className='fixed top-0 bg-[#006039] w-full h-[70px] text-white font-semibold '>
-        <div className='mx-auto max-w-7xl p-5 text-center relative h-full z-50 '>
+        <div className='mx-auto max-w-7xl p-5 text-center relative h-full '>
             {/* menu btn */}
             <div className='absolute left-5 top-5'>
                 {path == '/' && (
-                    <button onClick={() => setSidebarOpen(!sidebarOpen)} className=" duration-300 flex items-center justify-center gap-1">
+                    <button onClick={() => setSidebarOpen(!sidebarOpen)} className=" duration-300 flex items-center justify-center gap-1 z-50 ">
                         
                         {/* hamburger */}
                         <div className='h-6 w-6 z-50'>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                         </div>
 
-                        <p>Menu</p>
+                        <p className='z-50'>Menu</p>
                     </button>
                 )}
                 {path != '/' && (
@@ -76,7 +76,7 @@ const Navbar = () => {
         {/* Sidebar for Menu Options */}
         
             <div
-            className={`fixed top-0 ${sidebarOpen ? 'left-0' : '-left-[500px]'} bg-[#006039] h-full z-30 p-20 text-white duration-300`}
+            className={`fixed top-0 ${sidebarOpen ? 'left-0' : '-left-[500px]'} bg-[#006039] h-full z-30 p-20 text-white duration-300 shadow-ring shadow-2xl `}
           >
             <div className="flex flex-col items-center text-white">
               <button onClick={() => scrollToSection('hero')} className="p-3 hover:text-green-500 duration-200">Home</button>
