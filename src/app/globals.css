@@ -11,6 +11,23 @@
 }
 
 
+/* .off-white{
+  background-image: url('/off-white.png');
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+} */
+
+.off-white-page{
+  background-image: url('/page-bg.jpeg');
+  background-size: cover;  /* Ensures the image covers the entire element */
+  background-position: top;  /* Centers the image */
+  background-repeat: repeat ;  
+}
+
+
+
+
 @font-face {
     font-family: 'MyFont';
     src: url('/fonts/MyFont.ttf') format('truetype');

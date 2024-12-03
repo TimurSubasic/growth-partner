@@ -24,7 +24,7 @@ export default function Home() {
 
 
       {/* about us */}
-      <section id='about-us' className="text-[#006039] py-16 px-5 max-w-7xl mx-auto ">
+      <section id='about-us-old' className="text-[#006039] py-16 px-5 max-w-7xl mx-auto hidden ">
 
         <h1 className="text-center font-myfont uppercase text-4xl mt-12 lg:text-5xl duration-150 ">
           about us
@@ -38,7 +38,7 @@ export default function Home() {
 
 
       {/* why us */}
-      <section id='why-us' className="bg-[#006039] w-full min-h-screen text-white p-12 ">
+      <section id='why-us-old' className="bg-[#006039] w-full min-h-screen text-white p-12 hidden ">
 
         <div className=" max-w-4xl mx-auto flex flex-col items-center justify-center gap-8">
 
@@ -138,8 +138,147 @@ export default function Home() {
       </section>
 
 
+
+      <section id='why-us' className=' text-white -z-10 relative '>
+
+        <h2 className=' font-myfont text-3xl text-center uppercase py-10 text-[#006039] lg:hidden '>
+          why us?
+        </h2>
+
+        {/* flexbox for 2 sections */}
+        <div className='flex w-full flex-col lg:flex-row-reverse gap-6 max-w-7xll mx-auto lg:gap-0 '>
+
+
+          <section id="off-white" className='off-white w-full flex flex-col gap-6 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pr-36 duration-300 '>
+
+            <h2 className='font-myfont text-3xl absolute top-16 left-2 text-[#006039] hidden lg:block'>
+              US?
+            </h2>
+
+            <div className='uppercase text-[#006039] text-xl text-center font-bold lg:text-start '>
+            THE FOCUS IS ON DELIVERING REAL RESULTS TO OUR CLIENTS, WE ARE A DEDICATED TEAM OF MARKETERS, SALES EXPERTS, COPYWRITERS, WEB-DEVELOPERS AND GRAPHI DESIGNERS SPECIALIZING IN BUILDING HIGH- CONVERTING FUNNELS AND DRIVING CONVERSIONS ACROSS YOUR DIGITAL PLATFORMS.
+            </div>
+
+            <Image
+            src={'/GP-icon2.png'}
+            alt='GrowthPartners icon'
+            height={200}
+            width={200}
+            className='mx-auto'
+
+            />
+
+            <div className='uppercase text-[#006039] text-xl text-center font-bold lg:text-start '>
+             FROM CONCEPT TO EXECUTION, WE CRAFT TAILORED STRATEGIES THAT DON'T JUST ATTRACT ATTENTION BUT TRANSFORM VISITORS INTO LOYAL CUSTOMERS. IF YOU'RE READY TO STOP SETTLING FOR AVERAGE AND START MAXIMAZING YOUR DIGITAL IMPACT, WE'RE HERE TO TAKE YOUR CONTENT CREATING BUSINESS TO THE NEXT LEVEL.
+            </div>
+
+
+
+          </section>
+
+
+
+          <section id="green" className=' w-full bg-[#006039] flex flex-col gap-6 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pl-36 duration-300 '>
+
+            <h2 className='font-myfont text-3xl absolute top-16 right-2 text-white hidden lg:block'>
+              WHY
+            </h2>
+
+
+            
+            {/* item 1 */}
+            <div className='flex items-start justify-center gap-4'>
+
+              <Image
+              src='/icon-1.png'
+              alt='Fast Icon'
+              height={200}
+              width={200}
+              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              />
+
+              <div className='text-start'>
+
+                <h3 className='font-bold text-xl mb-2 '>
+                  FAST EXECUTION
+                </h3>
+
+                <p className='text-lg'>
+                Our streamlined process ensures fast and effective delivery, completing projects in as little as 20 days tailored to the size and complexity of your needs.
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* item 2 */}
+            <div className='flex items-start justify-center gap-4'>
+
+              <Image
+              src='/icon-2.png'
+              alt='Fast Icon'
+              height={200}
+              width={200}
+              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              />
+
+              <div className='text-start'>
+
+                <h3 className='font-bold text-xl mb-2'>
+                  SUSTAINABLE
+                </h3>
+
+                <p className='text-lg'>
+                Our product is designed to deliver lasting impact. It continues to convert and provide value long after our involvement, requiring no ongoing dependency on us.
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* item 3 */}
+            <div className='flex items-start justify-center gap-4'>
+
+              <Image
+              src='/icon-3.png'
+              alt='Fast Icon'
+              height={200}
+              width={200}
+              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              />
+
+              <div className='text-start'>
+
+                <h3 className='font-bold text-xl mb-2'>
+                  FOSTERING COMMUNITY
+                </h3>
+
+                <p className='text-lg'>
+                  At the heart of what we do is fostering community. We bring people together to create a sense of belonging, where collaboration, support, and shared goals drive collective growth. By cultivating meaningful connections, we empower individuals to thrive within a united and engaging environment, ensuring lasting relationships with your followers and shared success.
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+
+
+
+
+
+
+        </div>
+
+      </section>
+
+
+
+
+
       {/* contact us */}
-      <section id='contact-us' className=' py-16 px-5 max-w-7xl mx-auto  ' >
+      <section id='contact-us' className='off-white pb-16 pt-8 px-5 max-w-7xl mx-auto  ' >
 
         <div className='flex items-center justify-center flex-col'>
 
@@ -148,12 +287,12 @@ export default function Home() {
             <Image
             src='/GP-icon2.png'
             alt='GrowthPartners icon'
-            height={250}
-            width={250}
+            height={280}
+            width={280}
             className=' mx-auto '
             />
 
-            <h2 className=' font-myfont text-3xl text-[#006039] uppercase '>
+            <h2 className=' font-myfont text-2xl lg:text-3xl text-[#006039] uppercase text-center '>
               Contact us
             </h2>
 
@@ -163,7 +302,7 @@ export default function Home() {
           {/* text +btn */}
           <div className=' flex justify-center items-center my-10 flex-col gap-6 md:flex-row '>
 
-            <p className=' text-green-500 uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl duration-150 text-center md:text-start md:w-2/3 '>
+            <p className=' text-[#298e65] uppercase font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl duration-150 text-center md:text-start md:w-2/3 '>
               Our services are mainly in building you an eco-system that we can manage and improve constantly, the best part is that we do not charge for that, we just take a % of sales depending on our engagemant for building you a system that we do not manage we charge <span className='text-yellow-500'>1000-2000</span> depending on the size of the project
             </p>
 

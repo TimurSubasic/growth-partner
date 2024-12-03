@@ -26,7 +26,7 @@ import { Textarea } from "@/components/ui/textarea"
 const formSchema = z.object({
   name: z.string(),
   email: z.string().email(),
-  phone: z.string().min(4, 'Enter valid number!').max(18, 'Enter valid number!'),
+  handle: z.string().max(30),
   select: z.string(),
   message: z.string().min(20, 'Please give us more information'),
 
@@ -100,15 +100,15 @@ export default function Contact() {
 
         <FormField
           control={form.control}
-          name="phone"
+          name="handle"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Phone Number</FormLabel>
+              <FormLabel>Instagram Handle</FormLabel>
               <FormControl>
-                <Input placeholder="+123 45 678 910" {...field} />
+                <Input placeholder="Your instagram username" {...field} />
               </FormControl>
               <FormDescription>
-                {/* Enter your phone number */}
+                {/* Enter your instagram handle */}
               </FormDescription>
               <FormMessage />
             </FormItem>
