@@ -25,19 +25,6 @@ const Navbar = () => {
         }
       };
 
-      const changeDesign = () => {
-        const newTheme = document.getElementById('why-us');
-        const oldWhy = document.getElementById('why-us-old');
-        const oldAbout = document.getElementById('about-us-old');
-
-        newTheme?.classList.toggle('hidden')
-
-        oldWhy?.classList.toggle('hidden')
-
-        oldAbout?.classList.toggle('hidden');
-
-      }
-
      
 
   return (
@@ -94,8 +81,8 @@ const Navbar = () => {
             <div className="flex flex-col items-center text-white">
               <button onClick={() => scrollToSection('hero')} className="p-3 hover:text-green-500 duration-200">Home</button>
               <button onClick={() => scrollToSection('why-us')} className="p-3 hover:text-green-500 duration-200">Why Us</button>
-              <button onClick={() => scrollToSection('contact-us')} className="p-3 hover:text-green-500 duration-200">Contact Us</button>
-              <button onClick={() => changeDesign()} className="p-3 hover:text-green-500 duration-200">prosli dizajn</button>
+              <button onClick={() => scrollToSection('FAQ')} className="p-3 hover:text-green-500 duration-200">FAQ</button>
+              <Link href='/contact' className='p-3 hover:text-green-500 duration-200'>Contact Us</Link>
             </div>
           </div>
         
