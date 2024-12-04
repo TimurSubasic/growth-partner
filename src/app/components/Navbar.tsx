@@ -25,6 +25,15 @@ const Navbar = () => {
         }
       };
 
+
+    const toggleBg = () => {
+
+        document.getElementById('page-body')?.classList.toggle('full-page-bg-1');
+
+        document.getElementById('page-body')?.classList.toggle('full-page-bg-2');
+
+    }
+
      
 
   return (
@@ -76,13 +85,14 @@ const Navbar = () => {
         {/* Sidebar for Menu Options */}
         
             <div
-            className={`fixed top-0 ${sidebarOpen ? 'left-0' : '-left-[500px]'} bg-[#006039] h-full z-30 pt-20 p-14 sm:p-16 md:p-20 xl:p-28 text-white duration-300 shadow-ring shadow-2xl `}
+            className={`fixed top-0 ${sidebarOpen ? 'left-0' : '-left-[500px]'} bg-[#006039] h-full z-30 pt-20 p-14 sm:p-16 md:p-20 xl:p-28 text-white duration-300 shadow-ring shadow-2xl green-bg `}
           >
             <div className="flex flex-col items-center text-white">
-              <button onClick={() => scrollToSection('hero')} className="p-3 hover:text-green-500 duration-200">Home</button>
-              <button onClick={() => scrollToSection('why-us')} className="p-3 hover:text-green-500 duration-200">Why Us</button>
-              <button onClick={() => scrollToSection('FAQ')} className="p-3 hover:text-green-500 duration-200">FAQ</button>
-              <Link href='/contact' onClick={() => setSidebarOpen(!sidebarOpen)} className='p-3 hover:text-green-500 duration-200'>Contact Us</Link>
+              <button onClick={() => scrollToSection('hero')} className="p-3 hover:text-black duration-200">Home</button>
+              <button onClick={() => scrollToSection('why-us')} className="p-3 hover:text-black duration-200">Why Us</button>
+              <button onClick={() => scrollToSection('FAQ')} className="p-3 hover:text-black duration-200">FAQ</button>
+              <Link href='/contact' onClick={() => setSidebarOpen(!sidebarOpen)} className='p-3 hover:text-black duration-200'>Contact Us</Link>
+              <button onClick={() => toggleBg()} className="p-3 hover:text-black duration-200">Toggle bg</button>
             </div>
           </div>
         

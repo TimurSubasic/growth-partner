@@ -12,10 +12,24 @@
 
 
 
-.off-white-page{
-  background-image: url('/page-bg.jpeg');
-  background-size: contain;  /* Ensures the image covers the entire element */
-  background-position: top;  /* Centers the image */
+.full-page-bg-1{
+  background-image: url('/white-bg-01.png');
+  background-size: contain;  
+  background-position: top; 
+  background-repeat: repeat ;  
+}
+
+.full-page-bg-2{
+  background-image: url('/white-bg-2.png');
+  background-size: contain;  
+  background-position: top;  
+  background-repeat: repeat ;  
+}
+
+.green-bg{
+  background-image: url('/green-bg.png');
+  background-size: contain;  
+  background-position: top;  
   background-repeat: repeat ;  
 }
 

@@ -196,44 +196,44 @@ export default function Home() {
           <Accordion type="single" collapsible>
 
             <AccordionItem value="item-1">
-              <AccordionTrigger>Question 1</AccordionTrigger>
+              <AccordionTrigger>What sets you apart from other agencies?</AccordionTrigger>
               <AccordionContent>
-                Answer 1
+              While others may focus on diverse fields, we specialize in helping content creators succeed. We prioritize execution and deliver real, measurable results. Our team's expertise in marketing, sales, design, and editing enables us to craft impactful, end- to-end solutions tailored specifically for your online business and services, with a strong emphasis on community creation and engagement.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>Question 2</AccordionTrigger>
+              <AccordionTrigger>How much do your services cost?</AccordionTrigger>
               <AccordionContent>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed saepe hic cumque deserunt, rem vero corporis nobis blanditiis odit amet?
+              Pricing depends on the scope and complexity of the project We provide transparent quotes after assessing your specific needs during our consultation.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger>Question 3</AccordionTrigger>
+              <AccordionTrigger>Do you offer support after the project is completed?</AccordionTrigger>
               <AccordionContent>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam id deleniti ex minus similique suscipit quia? Illum culpa nihil numquam earum praesentium. Incidunt consequatur odio consectetur molestiae quaerat, hic odit dignissimos blanditiis iure tempore atque expedita quas quidem voluptatibus libero quisquam. Ex illum at labore quam quibusdam vel laboriosam?
+              Yes, we provide ongoing support and maintenance services to ensure the long-term success of your digital platform Additionally, if you prefer a "key-to-the-house" type of deal, where everything is set up and ready for you to manage independently, we can accommodate that as well Can you help with rebranding or updating existing platforms Yes, we can revamp and optimize existing digital platforms to improve performance and drive higher conversions.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger>Question 4</AccordionTrigger>
+              <AccordionTrigger>How long does it take to see results?</AccordionTrigger>
               <AccordionContent>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, blanditiis.
+              Timelines vary based on the complexity of your project, but we typically begin delivering noticeable results within 20-30 days. We provide regular updates and reports to keep you informed every step of the way.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5">
-              <AccordionTrigger>Question 5</AccordionTrigger>
+              <AccordionTrigger>What does "fostering community" mean in your services?</AccordionTrigger>
               <AccordionContent>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vitae, perspiciatis quas culpa cum deleniti velit dolores sint possimus quaerat quis deserunt consequatur debitis nostrum doloribus iusto quisquam placeat quasi ipsa, ut repudiandae? Sequi nisi eos, repudiandae sapiente porro id, iste maiores beatae obcaecati quidem amet ullam culpa, qui omnis vero alias soluta dolor eius. Magni rem animi nobis excepturi ullam impedit veritatis suscipit hic.
+              Fostering community means creating a space where individuals feel connected, supported, and engaged. We help build a meaningful connection between you and your followers-one they cherish and respect-turning casual interactions into loyal and lasting relationships.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6">
-              <AccordionTrigger>Question 6</AccordionTrigger>
+              <AccordionTrigger>What is your ideal client?</AccordionTrigger>
               <AccordionContent>
-                Lorem ipsum dolor sit amet.
+              Our ideal client is an educational content creator looking to expand their online presence, build a thriving community, and maximize their digital impact. We work best with creators who are passionate about delivering value to their audience and are ready to elevate their content and engagement strategies.
               </AccordionContent>
             </AccordionItem>
 
