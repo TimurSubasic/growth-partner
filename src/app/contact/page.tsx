@@ -105,7 +105,7 @@ export default function Contact() {
             <FormItem>
               <FormLabel>Instagram Handle</FormLabel>
               <FormControl>
-                <Input placeholder="Your instagram username" {...field} />
+                <Input placeholder="@username" {...field} />
               </FormControl>
               <FormDescription>
                 {/* Enter your instagram handle */}
