@@ -3,6 +3,8 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import { useEffect, useState } from "react" // Import useState and useEffect
+
 import {
   Form,
   FormControl,
@@ -22,29 +24,38 @@ import {
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 
-
 const formSchema = z.object({
-  name: z.string(),
-  email: z.string().email(),
-  handle: z.string().max(30),
-  select: z.string(),
+  name: z.string().min( 1, 'Required'),
+  email: z.string().min( 1, 'Required').email(),
+  handle: z.string().min( 1, 'Required').max(30),
+  select: z.string().min( 1, 'Required'),
   message: z.string().min(20, 'Please give us more information'),
 })
 
 export default function Contact() {
+  const [isClient, setIsClient] = useState(false) // Add state to track client-side rendering
+
+  useEffect(() => {
+    setIsClient(true) // Set isClient to true after the component mounts
+  }, [])
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {},
+    defaultValues: {
+      name: '',
+      email: '',
+      handle: '',
+      select: '',
+      message: '',
+    },
   })
 
-  const myForm = document.getElementById('form')
+  const myForm = isClient ? document.getElementById('form') : null // Only access document on the client side
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-
-
-    myForm?.classList.add('hidden')
-
+    if (myForm) {
+      myForm.classList.add('hidden')
+    }
 
     try {
       // Send the form data to the API to send an email
@@ -70,8 +81,12 @@ export default function Contact() {
     }
   }
 
+  if (!isClient) {
+    return null; // Avoid rendering anything before the component mounts
+  }
+
   return (
-    <div className="max-w-6xl w-full mx-auto p-5 min-h-screen ">
+    <div className="max-w-6xl w-full mx-auto p-5 ">
       <section className="mb-10 mt-5" id="form" >
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
