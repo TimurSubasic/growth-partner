@@ -26,14 +26,6 @@ const Navbar = () => {
       };
 
 
-    const toggleBg = () => {
-
-        document.getElementById('page-body')?.classList.toggle('full-page-bg-1');
-
-        document.getElementById('page-body')?.classList.toggle('full-page-bg-2');
-
-    }
-
      
 
   return (
@@ -92,7 +84,6 @@ const Navbar = () => {
               <button onClick={() => scrollToSection('why-us')} className="p-3 hover:text-black duration-200">Why Us</button>
               <button onClick={() => scrollToSection('FAQ')} className="p-3 hover:text-black duration-200">FAQ</button>
               <Link href='/contact' onClick={() => setSidebarOpen(!sidebarOpen)} className='p-3 hover:text-black duration-200'>Contact Us</Link>
-              <button onClick={() => toggleBg()} className="p-3 hover:text-black duration-200">Toggle bg</button>
             </div>
           </div>
         
