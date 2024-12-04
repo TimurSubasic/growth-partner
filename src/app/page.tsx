@@ -15,7 +15,7 @@ export default function Home() {
       
 
       {/* hero */}
-      <section id="hero" className="h-screen-nav w-full ">
+      <section id="hero" className="h-screen-nav w-full  ">
 
         <div className="w-full h-full flex items-center justify-center bg-black/25">
 
