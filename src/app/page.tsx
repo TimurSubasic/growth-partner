@@ -1,5 +1,13 @@
 
 import Image from 'next/image'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+
 export default function Home() {
   
   return (
@@ -161,8 +169,8 @@ export default function Home() {
 
 
 
-      {/* contact us */}
-      <section id='FAQ' className=' pb-16 pt-8 px-5 max-w-7xl mx-auto  ' >
+      {/* FAQ */}
+      <section id='FAQ' className=' pb-16 pt-8 px-5 max-w-5xl mx-auto  ' >
 
         <div className='flex items-center justify-center flex-col'>
 
@@ -183,8 +191,54 @@ export default function Home() {
           </div>
 
 
-          <div>
-            question box
+          {/* FAQs */}
+          <div className='w-full'>
+          <Accordion type="single" collapsible>
+
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Question 1</AccordionTrigger>
+              <AccordionContent>
+                Answer 1
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Question 2</AccordionTrigger>
+              <AccordionContent>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed saepe hic cumque deserunt, rem vero corporis nobis blanditiis odit amet?
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Question 3</AccordionTrigger>
+              <AccordionContent>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam id deleniti ex minus similique suscipit quia? Illum culpa nihil numquam earum praesentium. Incidunt consequatur odio consectetur molestiae quaerat, hic odit dignissimos blanditiis iure tempore atque expedita quas quidem voluptatibus libero quisquam. Ex illum at labore quam quibusdam vel laboriosam?
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Question 4</AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, blanditiis.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>Question 5</AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vitae, perspiciatis quas culpa cum deleniti velit dolores sint possimus quaerat quis deserunt consequatur debitis nostrum doloribus iusto quisquam placeat quasi ipsa, ut repudiandae? Sequi nisi eos, repudiandae sapiente porro id, iste maiores beatae obcaecati quidem amet ullam culpa, qui omnis vero alias soluta dolor eius. Magni rem animi nobis excepturi ullam impedit veritatis suscipit hic.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger>Question 6</AccordionTrigger>
+              <AccordionContent>
+                Lorem ipsum dolor sit amet.
+              </AccordionContent>
+            </AccordionItem>
+
+          </Accordion>
+
           </div>
 
 

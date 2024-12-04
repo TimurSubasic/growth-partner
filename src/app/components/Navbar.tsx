@@ -66,7 +66,7 @@ const Navbar = () => {
 
             <div className='absolute right-5 top-5'>
                 {path != '/contact' && (
-                    <Link href='/contact' className=' duration-300'>
+                    <Link href='/contact' onClick={() => {setSidebarOpen(false)}} className=' duration-300'>
                         Contact Us
                     </Link>
                 )}
@@ -82,7 +82,7 @@ const Navbar = () => {
               <button onClick={() => scrollToSection('hero')} className="p-3 hover:text-green-500 duration-200">Home</button>
               <button onClick={() => scrollToSection('why-us')} className="p-3 hover:text-green-500 duration-200">Why Us</button>
               <button onClick={() => scrollToSection('FAQ')} className="p-3 hover:text-green-500 duration-200">FAQ</button>
-              <Link href='/contact' className='p-3 hover:text-green-500 duration-200'>Contact Us</Link>
+              <Link href='/contact' onClick={() => setSidebarOpen(!sidebarOpen)} className='p-3 hover:text-green-500 duration-200'>Contact Us</Link>
             </div>
           </div>
         
