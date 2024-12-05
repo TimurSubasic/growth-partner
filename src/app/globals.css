@@ -4,7 +4,7 @@
 
 
 #hero{
-    background-image: url('/bg-paint.png');
+    background-image: url('/bg-paint.webp');
     background-size: cover;  /* Ensures the image covers the entire element */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents the image from repeating */
