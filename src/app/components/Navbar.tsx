@@ -56,12 +56,12 @@ const Navbar = () => {
             </div>
 
             {/* center image */}
-            <div className='inline-block -mt-[10px]'>
+            <div className='inline-block -mt-[18px]'>
                 <Image
                     src="/gp2.png" 
                     alt="Growth Partners Icon"
-                    width={40} 
-                    height={40} 
+                    width={55} 
+                    height={55} 
                 />
             </div>
 

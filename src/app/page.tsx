@@ -41,21 +41,21 @@ export default function Home() {
         <div className='flex w-full flex-col lg:flex-row-reverse gap-6 max-w-7xll mx-auto lg:gap-0 '>
 
 
-          <section id="" className=' w-full flex flex-col gap-6 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pr-36 duration-300 '>
+          <section id="" className=' w-full flex flex-col gap-0 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pr-36 duration-300 '>
 
             <h2 className='font-myfont text-3xl absolute top-16 left-2 text-[#006039] hidden lg:block'>
               US?
             </h2>
 
             <div className='uppercase text-[#006039] text-xl text-center font-bold lg:text-start '>
-            THE FOCUS IS ON DELIVERING REAL RESULTS TO OUR CLIENTS, WE ARE A DEDICATED TEAM OF MARKETERS, SALES EXPERTS, COPYWRITERS, WEB-DEVELOPERS AND GRAPHI DESIGNERS SPECIALIZING IN BUILDING HIGH- CONVERTING FUNNELS AND DRIVING CONVERSIONS ACROSS YOUR DIGITAL PLATFORMS.
+              THE FOCUS IS ON DELIVERING REAL RESULTS TO OUR CLIENTS, WE ARE A DEDICATED TEAM OF MARKETERS, SALES EXPERTS, COPYWRITERS, WEB-DEVELOPERS AND GRAPHI DESIGNERS SPECIALIZING IN BUILDING HIGH- CONVERTING FUNNELS AND DRIVING CONVERSIONS ACROSS YOUR DIGITAL PLATFORMS.
             </div>
 
             <Image
             src={'/GP-icon2.png'}
             alt='GrowthPartners icon'
-            height={200}
-            width={200}
+            height={300}
+            width={300}
             className='mx-auto'
 
             />
@@ -176,16 +176,10 @@ export default function Home() {
 
           {/* Header */}
           <div className='felx flex-col gap-5 items-center justify-center '>
-            <Image
-            src='/GP-icon2.png'
-            alt='GrowthPartners icon'
-            height={280}
-            width={280}
-            className=' mx-auto '
-            />
+            
 
-            <h2 className=' font-myfont text-2xl lg:text-3xl text-[#006039] uppercase text-center '>
-              FAQ
+            <h2 className=' font-myfont text-2xl lg:text-3xl text-[#006039] uppercase text-center mt-8 '>
+              frequently asked questions
             </h2>
 
           </div>
