@@ -82,7 +82,7 @@ export default function Home() {
             <div className='flex items-start justify-center gap-4'>
 
               <video 
-                src="/speed.mov" 
+                src="/speed.webm" 
                 autoPlay 
                 loop 
                 muted 
@@ -108,7 +108,7 @@ export default function Home() {
             <div className='flex items-start justify-center gap-4'>
 
               <video 
-                src="/infinity.mov" 
+                src="/infinity.webm" 
                 autoPlay 
                 loop 
                 muted 
@@ -134,7 +134,7 @@ export default function Home() {
             <div className='flex items-start justify-center gap-4'>
 
               <video 
-                src="/hands.mov" 
+                src="/hands.webm" 
                 autoPlay 
                 loop 
                 muted 
