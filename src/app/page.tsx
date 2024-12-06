@@ -81,12 +81,13 @@ export default function Home() {
             {/* item 1 */}
             <div className='flex items-start justify-center gap-4'>
 
-              <Image
-              src='/icon-1.png'
-              alt='Fast Icon'
-              height={200}
-              width={200}
-              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              <video 
+                src="/thunder.webm" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
               />
 
               <div className='text-start'>
