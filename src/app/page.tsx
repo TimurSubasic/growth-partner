@@ -106,12 +106,13 @@ export default function Home() {
             {/* item 2 */}
             <div className='flex items-start justify-center gap-4'>
 
-              <Image
-              src='/icon-2.png'
-              alt='Fast Icon'
-              height={200}
-              width={200}
-              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              <video 
+                src="/infinity.webm" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
               />
 
               <div className='text-start'>
@@ -131,12 +132,13 @@ export default function Home() {
             {/* item 3 */}
             <div className='flex items-start justify-center gap-4'>
 
-              <Image
-              src='/icon-3.png'
-              alt='Fast Icon'
-              height={200}
-              width={200}
-              className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+              <video 
+                src="/hands.webm" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
               />
 
               <div className='text-start'>
