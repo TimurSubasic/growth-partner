@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import { useEffect, useState } from "react" // Import useState and useEffect
+import { useEffect, useRef, useState } from "react" // Import useState and useEffect
 
 import {
   Form,
@@ -23,6 +23,9 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
+import Loading from "../components/Loading"
+import Sent from "../components/Sent"
+import NotSent from "../components/NotSent"
 
 const formSchema = z.object({
   name: z.string().min( 1, 'Required'),
@@ -34,6 +37,10 @@ const formSchema = z.object({
 
 export default function Contact() {
   const [isClient, setIsClient] = useState(false) // Add state to track client-side rendering
+  const formRef = useRef<HTMLDivElement>(null); // Define the ref
+  const loadingRef = useRef<HTMLDivElement>(null);
+  const sentRef = useRef<HTMLDivElement>(null)
+  const notSentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setIsClient(true) // Set isClient to true after the component mounts
@@ -50,11 +57,13 @@ export default function Contact() {
     },
   })
 
-  const myForm = isClient ? document.getElementById('form') : null // Only access document on the client side
+  
+  const myForm = formRef.current;
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     if (myForm) {
       myForm.classList.add('hidden')
+      loadingRef.current?.classList.remove('hidden')
     }
 
     try {
@@ -70,14 +79,28 @@ export default function Contact() {
       const result = await response.json();
       
       if (result.success) {
-        alert("Your message has been sent successfully!");
+        
+        // SUCCESS
+
+        loadingRef.current?.classList.add('hidden')
+
+        sentRef.current?.classList.remove('hidden')
+
       } else {
         console.error(result.error);
-        alert("Failed to send message. Please try again.");
+        alert(result.error);
+
+        loadingRef.current?.classList.add('hidden')
+
+        notSentRef.current?.classList.remove('hidden')
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Something went wrong. Please try again.");
+      alert(error);
+
+      loadingRef.current?.classList.add('hidden')
+
+      notSentRef.current?.classList.remove('hidden')
     }
   }
 
@@ -87,7 +110,7 @@ export default function Contact() {
 
   return (
     <div className="max-w-6xl w-full mx-auto p-5 ">
-      <section className="mb-10 mt-5" id="form" >
+      <section className="mb-10 mt-5" ref={formRef} >
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             {/* Name Field */}
@@ -199,6 +222,26 @@ export default function Contact() {
           </form>
         </Form>
       </section>
+
+
+
+       <Loading ref={loadingRef} />
+
+       <Sent ref={sentRef} />
+
+       <NotSent 
+       ref={notSentRef}
+
+       formData={{
+        name: form.getValues().name,
+        email: form.getValues().email,
+        handle: form.getValues().handle,
+        select: form.getValues().select,
+        message: form.getValues().message,
+      }}
+      
+       />
+
     </div>
   );
 }
