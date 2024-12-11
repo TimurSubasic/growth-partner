@@ -1,5 +1,7 @@
 import React, { forwardRef } from 'react';
 import Image from 'next/image';
+import { useToast } from "@/hooks/use-toast"
+
 
 interface NotSentProps {
   // You can add any props here if needed
@@ -13,6 +15,9 @@ interface NotSentProps {
 }
 
 const NotSent = forwardRef<HTMLDivElement, NotSentProps>(({ formData }, ref) => {
+
+  const { toast } = useToast()
+
   const handleCopyForm = () => {
     // Structure the content exactly like in route.ts for the email
     const textToCopy = `
@@ -27,10 +32,22 @@ const NotSent = forwardRef<HTMLDivElement, NotSentProps>(({ formData }, ref) => 
 
     // Copy the text to the clipboard
     navigator.clipboard.writeText(textToCopy).then(() => {
-      alert('Form copied to clipboard! You can now paste it in your email.');
+
+
+      toast({
+        title: "Form copied to clipboard! You can now paste it in your email.",
+      })
+
     }).catch(err => {
+
       console.error('Error copying text: ', err);
-      alert('Failed to copy form.');
+
+      toast({
+        variant: "destructive",
+        title: "There was an error copying text!",
+      })
+
+
     });
   };
 

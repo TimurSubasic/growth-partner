@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { useEffect, useRef, useState } from "react" // Import useState and useEffect
+import { useToast } from "@/hooks/use-toast"
 
 import {
   Form,
@@ -41,6 +42,8 @@ export default function Contact() {
   const loadingRef = useRef<HTMLDivElement>(null);
   const sentRef = useRef<HTMLDivElement>(null)
   const notSentRef = useRef<HTMLDivElement>(null)
+
+  const { toast } = useToast()
 
   useEffect(() => {
     setIsClient(true) // Set isClient to true after the component mounts
@@ -88,15 +91,23 @@ export default function Contact() {
 
       } else {
         console.error(result.error);
-        alert(result.error);
-
+  
+        toast({
+          variant: "destructive",
+          title: "We couldn't send your message right now. Please try again later.",
+        })
+        
         loadingRef.current?.classList.add('hidden')
 
         notSentRef.current?.classList.remove('hidden')
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert(error);
+      
+      toast({
+        variant: "destructive",
+        title: "We couldn't connect to our servers. Please check your internet connection and try again.",
+      })
 
       loadingRef.current?.classList.add('hidden')
 
