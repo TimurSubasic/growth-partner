@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     const { name, email, handle, select, message } = await request.json();
 
     const { data } = await resend.emails.send({
-      from: 'GrowthPartner <onboarding@resend.dev>',
+      from: 'GrowthPartner <onboarding@growthpartner.rs>',
       to: 'partnerships@growthpartner.rs',
       subject: `New Submission from ${name}`,
       html: `
