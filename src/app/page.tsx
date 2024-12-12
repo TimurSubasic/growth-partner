@@ -87,14 +87,29 @@ export default function Home() {
                 loop 
                 muted 
                 playsInline 
-                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150 hidden md:block lg:hidden xl:block'
               />
 
               <div className='text-start'>
 
-                <h3 className='font-bold text-xl mb-2 '>
-                  FAST EXECUTION
-                </h3>
+                <div className='flex justify-between items-end gap-2 mr-8'>
+
+                  <h3 className='font-bold text-xl mb-2 '>
+                    FAST EXECUTION
+                  </h3>
+
+                  <video 
+                    src="/speed.webm" 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className='h-28 w-28 sm:h-36 sm:w-36 duration-150 md:hidden lg:block xl:hidden '
+                  />
+
+                </div>
+
+                
 
                 <p className='text-lg'>
                 Our streamlined process ensures fast and effective delivery, completing projects in as little as 20 days tailored to the size and complexity of your needs.
@@ -113,14 +128,29 @@ export default function Home() {
                 loop 
                 muted 
                 playsInline 
-                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150 hidden md:block lg:hidden xl:block'
               />
 
               <div className='text-start'>
 
-                <h3 className='font-bold text-xl mb-2'>
-                  SUSTAINABLE
-                </h3>
+                <div className='flex justify-between items-end gap-2 mr-8'>
+
+                  <h3 className='font-bold text-xl mb-2 '>
+                    SUSTAINABLE
+                  </h3>
+
+                  <video 
+                    src="/infinity.webm" 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className='h-28 w-28 sm:h-36 sm:w-36 duration-150 md:hidden lg:block xl:hidden '
+                  />
+
+                </div>
+
+                
 
                 <p className='text-lg'>
                 Our product is designed to deliver lasting impact. It continues to convert and provide value long after our involvement, requiring no ongoing dependency on us.
@@ -139,14 +169,29 @@ export default function Home() {
                 loop 
                 muted 
                 playsInline 
-                className='h-28 w-28 sm:h-36 sm:w-36 duration-150'
+                className='h-28 w-28 sm:h-36 sm:w-36 duration-150 hidden md:block lg:hidden xl:block'
               />
 
               <div className='text-start'>
 
-                <h3 className='font-bold text-xl mb-2'>
-                  FOSTERING COMMUNITY
-                </h3>
+                <div className='flex justify-between items-end gap-2 mr-8'>
+
+                  <h3 className='font-bold text-xl mb-2 '>
+                    FOSTERING COMMUNITY
+                  </h3>
+
+                  <video 
+                    src="/hands.webm" 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline 
+                    className='h-28 w-28 sm:h-36 sm:w-36 duration-150 md:hidden lg:block xl:hidden '
+                  />
+
+                </div>
+
+                
 
                 <p className='text-lg'>
                   At the heart of what we do is fostering community. We bring people together to create a sense of belonging, where collaboration, support, and shared goals drive collective growth. By cultivating meaningful connections, we empower individuals to thrive within a united and engaging environment, ensuring lasting relationships with your followers and shared success.
@@ -155,6 +200,7 @@ export default function Home() {
               </div>
 
             </div>
+            
 
           </section>
 
