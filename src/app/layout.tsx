@@ -19,8 +19,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Growth Partners",
-  description: "Growth Partners is a leading agency for influencers. We create personalized strategies to boost marketing, increase sales, and achieve your goals. Contact us to grow your brand today!",
+  title: "Growth Partner",
+  description: "Growth Partner is a leading agency for influencers. We create personalized strategies to boost marketing, increase sales, and achieve your goals. Contact us to grow your brand today!",
 };
 
 export default function RootLayout({
