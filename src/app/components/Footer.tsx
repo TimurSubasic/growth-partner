@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='w-full flex items-center justify-center my-10'>
 
         <p className='font-semibold text-sm text-[#006039] capitalize '>
-            All Rights Reserved © Growth Partners
+            All Rights Reserved © Growth Partner
         </p>
       
     </div>
