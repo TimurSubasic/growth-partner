@@ -91,11 +91,6 @@ export default function Contact() {
 
       } else {
         console.error(result.error);
-  
-        toast({
-          variant: "destructive",
-          title: "We couldn't send your message right now. Please try again later.",
-        })
         
         loadingRef.current?.classList.add('hidden')
 

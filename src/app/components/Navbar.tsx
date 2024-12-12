@@ -29,7 +29,7 @@ const Navbar = () => {
      
 
   return (
-    <div className='fixed top-0 bg-[#006039] w-full h-[70px] text-white font-semibold '>
+    <div className='fixed top-0 bg-[#006039] w-full h-[70px] text-white font-semibold z-50 '>
         <div className='mx-auto max-w-7xl p-5 text-center relative h-full '>
             {/* menu btn */}
             <div className='absolute left-5 top-5'>

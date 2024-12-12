@@ -41,7 +41,7 @@ export default function Home() {
         <div className='flex w-full flex-col lg:flex-row-reverse gap-6 max-w-7xll mx-auto lg:gap-0 '>
 
 
-          <section id="" className=' w-full flex flex-col gap-0 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pr-36 duration-300 '>
+          <section id="" className=' w-full flex flex-col gap-0 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pr-10 2xl:pr-24  duration-300 '>
 
             <h2 className='font-myfont text-3xl absolute top-16 left-2 text-[#006039] hidden lg:block'>
               US?
@@ -70,7 +70,7 @@ export default function Home() {
 
 
 
-          <section id="green" className=' w-full bg-[#006039] flex flex-col gap-6 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pl-36 duration-300 '>
+          <section id="green" className=' w-full bg-[#006039] flex flex-col gap-6 items-center justify-center p-5 pb-20 lg:pt-44 lg:relative xl:pl-10 2xl:pl-24  duration-300 '>
 
             <h2 className='font-myfont text-3xl absolute top-16 right-2 text-white hidden lg:block'>
               WHY
