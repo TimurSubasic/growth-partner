@@ -74,7 +74,7 @@ const NotSent = forwardRef<HTMLDivElement, NotSentProps>(({ formData }, ref) => 
           </button>
 
           <a
-            href="mailto:subasictimur@gmail.com"
+            href="mailto:partnerships@growthpartner.rs"
             className="bg-[#006039] text-white w-32 h-12 flex items-center justify-center rounded-lg border-2 border-slate-400 font-semibold uppercase hover:bg-[#006039]/80 hover:shadow-lg duration-200"
           >
             Email Us
